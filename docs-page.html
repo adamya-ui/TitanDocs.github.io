@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TitanDocs - Documentation Template For Software Projects</title>
+	<link rel="icon" type="image/x-icon" href="/assets/images/titan.ico">
+	<!-- Meta -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
+    <meta name="author" content="Adam at BDS">    
+    <link rel="shortcut icon" href="favicon.ico">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css" />
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css" />
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css" /> </head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button"> <span></span> <span></span> <span></span> </button>
+					<div class="site-logo">
+						<a class="navbar-brand" href="index.html"> <img class="logo-icon me-2" src="assets/images/titan.svg" alt="logo" /><span class="logo-text" style=" letter-spacing: 1px;">Titan<span class="text-alt">Docs</span></span>
+						</a>
+					</div>
+				</div>
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box d-none d-lg-flex">
+						<form class="search-form">
+							<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
+							<button type="submit" class="btn search-btn" value="Search"> <i class="fas fa-search"></i> </button>
+						</form>
+					</div>
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-globe fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+						<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li> -->
+					</ul>
+				</div>
+		  </div>
+	  </div>
+	</header>
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
+					<button type="submit" class="btn search-btn" value="Search"> <i class="fas fa-search"></i> </button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title">
+						<a class="nav-link scrollto active" href="#section-1"> <span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Development</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#installation">Installation</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#folder-structure">Folder Structure</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#theme-configurations">Theme Configurations</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#layout">Page Layout</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#navigation">Navigation</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#routing">Routing</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#components"> <span class="theme-icon-holder me-2"><i class="fas fa-project-diagram fa-fw"></i></span>COMPONENTS</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Forms</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Tables</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Charts</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">UI Elements</a> 
+						<ul>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Buttons</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Modals</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Tabs</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Tooltip & Pophover</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Notification</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Progressbar</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Typography</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Breadcrumb</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Spinner</a>
+						</ul></li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#navigation-menu">Navigation Menu</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Navigation Path</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Page Title</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Search Box</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Table Controls</a> 
+						<ul>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Enable/Disable Column</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Settings</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Download</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Refresh</a>
+							<li class="nav-item"> <a class="nav-link scrollto" href="#">Filter</a>
+						</ul></li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#alert">Alert</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#Badge">Badge</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#breadcrumbs">Breadcrumbs</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#button">Button</a></li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Dropdown</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Modal</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#pagination">Pagination</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#">Table</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#search">Search</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-3"> <span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>AUTHENTICATION</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-3-1">Login</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-3-2">Register</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-4"> <span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>PAGE LAYOUT</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-4-1">Collapsed menu</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-4-2">Layout Boxed</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-5"> <span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>FORMS & TABLES</a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-5-1">Form Elements</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-5-2">Form Validations</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-5-3">Table</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-6"> <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web </a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-7"> <span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile </a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-8"> <span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources </a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a> </li>
+					<li class="nav-item section-title mt-3">
+						<a class="nav-link scrollto" href="#section-9"> <span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs </a>
+					</li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a> </li>
+					<li class="nav-item"> <a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a> </li>
+				</ul>
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">
+                                Development
+                            </h1>
+						<section class="docs-intro">
+							<p> This is docs for Titan React version. In this documentation you will find new features,
+								components, composition functions, etc implemented by UI Team along with using
+								Reactstrap. </p>
+								<div class="callout-block callout-block-success">
+									<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder me-1">
+												<i class="fas fa-thumbs-up"></i>
+											</span>
+											Tip
+										</h4>
+										<p>You can find Reactstrap component's docs at their official <a
+												href="https://reactstrap.github.io/" target="_blank"
+												rel="noopener noreferrer" class="alert-link">documentation</a></p>
+									</div>
+								</div>
+								<p>Let's install our project first, please see the installation instructions on how to
+									install and run Titan.</p>
+						</section>
+						<section class="docs-section" id="folder-structure">
+							<h2 class="section-heading">Design Overview</h2>
+							<!-- <p> Understand folder structure of project and what everything contains</p>
+							<h5>Overview</h5>
+							<p>Before checking folder structure it is better you know some stuff related to folder structure.</p> -->
+							<div class="simplelightbox-gallery row mb-3">
+								<div class="col-12 col-md-4 mb-3">
+									<a href="assets/images/Frame.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/Frame.png" alt="" title=""/></a>
+								</div>
+								<!-- <div class="col-12 col-md-4 mb-3">
+									<a href="assets/images/image2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/image2.png" alt="" title=""/></a>
+								</div>
+								<div class="col-12 col-md-4 mb-3">
+									<a href="assets/images/image3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/image3.png" alt="" title=""/></a>
+								</div> -->
+								
+							</div>
+						</section>
+					</header>
+					<section class="docs-section" id="installation">
+						<h2 class="section-heading">Installation</h2>
+						<p>Titan Admin is built using <a class="theme-link" href="https://create-react-app.dev/" target="_blank">CRA</a>. CRA is nicely documented to start off. You don't need to install or configure tools like Webpack or Babel. They are preconfigured and hidden so that you can focus on the code.</p>
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-bullhorn"></i>
+									</span>
+									<!--//icon-holder-->
+									Warning
+								</h4>
+								<p>Please make sure you use node's LTS version which is recommended by official node
+									site and not one with latest feature.</a></p>
+							</div>
+						</div>
+						<h5>Create a New React App :</h5>
+						<p>Create React App is a comfortable environment for learning React, and is the best way to
+							start building a new single-page application in React.</p>
+						<p>It sets up your development environment so that you can use the latest JavaScript features,
+							provides a nice developer experience, and optimizes your app for production. You’ll need to
+							have <code>Node >= 14.0.0 and npm >= 5.6</code></p>
+							<div class="docs-code-block"> <pre class="shadow-lg rounded"><code>npx create-react-app my-app
+cd my-app
+npm start</code></pre>
+							</div>
+							<div class="callout-block callout-block-info">
+								<div class="content">
+									<h4 class="callout-title">
+											<span class="callout-icon-holder me-1">
+												<i class="fas fa-info-circle"></i>
+											</span>
+											<!--//icon-holder-->
+											Note
+										</h4>
+										<p>npx on the first line is not a typo — it’s a <a
+											href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b"
+											target="_blank" rel="nofollow noopener noreferrer">package runner tool that
+											comes with npm 5.2+</a></p>
+								</div>
+								<!--//content-->
+							</div>
+							
+						<!-- docs-code-block ends -->
+					<section class="docs-section" id="folder-structure">
+						<h2 class="section-heading">Folder Structure</h2>
+						<p> Understand folder structure of project and what everything contains</p>
+						<h5>Overview</h5>
+						<p>Before checking folder structure it is better you know some stuff related to folder structure.</p>
+						<img class="rounded border" src="/assets/images/features/alert-structure.jpg">
+					</section>
+			
+					<section class="docs-section" id="theme-configurations">
+						<h2 class="section-heading">Theme Configurations</h2>
+						<p>  To configure project we will use <code>themeConfig.js</code> file, which have all template configurations listed with their valid values. </p>
+						<h5>Using themeConfig.js</h5>
+						<p><code>themeConfig.js</code> This is the file where you can update template behavior.</p>
+						<p><code>themeConfig.js</code> object options and it's valid values are already listed there. Hence, it is self explanatory. Just changed configuration as your requirement and you are done.</p>
+						
+					</section>
+			
+					<section class="docs-section" id="layout">
+						<h2 class="section-heading">Layout</h2>
+						<p> Understanding template layouts will help you create page with your desired layout.</p>
+						<h5>Layout Types</h5>
+						<p>There are two layout types:</p>
+						<h5>1. Blank Layout</h5>
+						<p>This is useful if you want to create pages without any other content like Authentication page where you don't need navbar, navigation menu, footer, etc.</p>
+						<p>Basically this is blank page and you can create everything from scratch.</p>
+						<h5>Project Example:</h5>
+						<ul>
+						    <li><strong class="me-1">Login V1</strong></li>
+						    <li><strong class="me-1">Register V1</strong></li>
+						    <li><strong class="me-1">Forgot Password V1</strong></li>
+						</ul>
+					</section>
+			
+					<section class="docs-section" id="navigation">
+						<h2 class="section-heading">Navigation</h2>
+						<p>In this section you will find how to add/update navigation menu items.</p>
+						<h5>Vertical Navigation Menu</h5>
+						<p>To update the vertical navigation menu items, update <code>src/navigation/vertical/index.js</code> file. We just created different files for different sections so we can find items easily. You can follow the same or just write the all the items in <code>index.js</code> file.</p>
+						<h5>Header</h5>
+						<p>You can create header using simple object with single property header:</p>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">{
+    <span class="hljs-attr">header</span>: <span class="hljs-string">'Apps & Pages'</span>
+ }
+</code></pre>
+						</div>
+						<h5>Navigation Menu Link</h5>
+						<p>This will be the route link. For creating link follow below object structure:</p>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">{
+    <span class="hljs-attr">id</span>: <span class="hljs-string">'email'</span>,
+   <span class="hljs-attr">title</span>: <span class="hljs-string">'Email'</span>,
+   <span class="hljs-attr">icon</span>: <span class="hljs-string">"Mail size={20}"</span>,
+   <span class="hljs-attr">navLink</span>: <span class="hljs-string">'/apps/email'</span>
+ }
+</code></pre>
+						</div>
+					</section>
+			
+					<section class="docs-section" id="routing">
+						<h2 class="section-heading">Routing</h2>
+						<p> In this section you will find how to add new routes and how we handled existing routes.</p>
+						<h5>Overview</h5>
+						<p>You can find our template's router configuration in <code>src/router/index.js</code>. <code>src/router/routes</code> folder contains all routes of our template., follow our pattern or use <code>src/router/index.js</code> to write your routes, it's completely up to you.</p>
+					</section>
+			
+				</article>
+				<article class="docs-article" id="components">
+					<header class="docs-header">
+						<h1 class="docs-heading">Components</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="navigation-menu">
+						<h2 class="section-heading">Navigation Menu</h2>
+						<h5>Design</h5>
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/Navigation-Menu.jpg"><img class="figure-img img-fluid shadow rounded" src="assets/images/Navigation-Menu.jpg" alt="" title=""/></a>
+							</div>						
+						</div>
+						<p>This contains the main navigation system of the platform. It is designed to be located in the left of the screen. The menu can be expanded and collapsed.</p>
+						<ul>
+						    <li><strong class="me-1">Case 1:</strong> When the user is interacting with the tabular content or interactive area, the navigation menu collapses to allow more screen real-estate</li>
+						    <li><strong class="me-1">Case 2:</strong> The sub-menu contents should also be visible in the collapsed menu in a hierarchal form. The sub-menu content should have left margin gap to show the hierarchical structure.</li>
+						    <li><strong class="me-1">Case 3:</strong> All the content such as search, user profile, settings and notification should exist in the navigation panel to allow all the remaining space for other interactive content.</li>
+						</ul>
+						<h5>Actions Performed:</h5>
+						<ul>
+						    <li>Main navigation method</li>
+						    <li>Search</li>
+						    <li>Profile switching</li>
+							<li>Settings</li>
+							<li>Notification</li>
+							<li>logo</li>
+						</ul>
+					</section>
+					<section class="docs-section" id="alert">
+						<h2 class="section-heading">Alert</h2>
+						<p> Alert component is slightly modified to make it more beautiful and provide custom animation. Let's have a glance</p>
+						<h5>Alert Structure</h5>
+						<p>We have added class for heading and <code>.alert-body</code> for body-content. Also we have added a class for link inside alert.<code>.alert-heading</code></p>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/adamya-ui/a4c90d23e792e7cb983af63125ee016b.js"></script>
+							<!-- ** Embed github code ends ** -->
+							<h5>Result:</h5>
+							<img class="rounded border" src="/assets/images/features/alert-structure.jpg">
+						</div>
+					</section>
+			
+					<section class="docs-section" id="Badge">
+						<h2 class="section-heading">Badge</h2>
+						<p> Badge component is slightly modified to make it more beautiful. Let's have a glance.</p>
+						<h5>Badge Light Color</h5>
+						<p>We have added light background color badges in our template. You have to pass <code>light-[color]</code>value to <code>color</code> prop.</p>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/adamya-ui/f15780b70fc863765e0a085e66a7976e.js"></script>
+							<!-- ** Embed github code ends ** -->
+							<h5>Result:</h5>
+							<img class="rounded border" src="/assets/images/features/badge-light.jpg">
+						</div>
+					</section>
+			
+					<section class="docs-section" id="breadcrumbs">
+						<h2 class="section-heading">Breadcrumbs</h2>
+						<p> This panel informs the user about their position in the current user-flow. It also allows them to navigate to previous steps, or jump to any particular stage according to the need. This panel can also contain the information about user or the organization on the right side of the screen.</p>
+						<h5>Separators</h5>
+						<p>You can change breadcrumb separator by using our custom classes <code>.breadcrumb-slash</code>,<code>.breadcrumb-dots</code>,<code>.breadcrumb-dashes</code>,<code>.breadcrumb-pipes</code>and <code>.breadcrumb-chevron</code></p>
+						<h5>Actions Performed:</h5>
+						<ul>
+						    <li>Inform user about current location in user flow</li>
+						    <li>Show the entire path of user-flow till then</li>
+						    <li>Jump between different previous paths</li>
+							<li>Accommodate the user and organization details</li>
+						</ul>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/adamya-ui/92f1e280bf0cb255cf4ce74ce6fad5d2.js"></script>
+							<!-- ** Embed github code ends ** -->
+							<h5>Result:</h5>
+							<img class="rounded border" src="/assets/images/features/breadcrumbs-separator.jpg">
+						</div>
+					</section>
+
+					<section class="docs-section" id="button">
+						<h2 class="section-heading">Button</h2>
+						<p> Button component is slightly modified to make it more beautiful. Let's have a glance.</p>
+						<h5>Flat Button</h5>
+						<p>We have also provided flat buttons. Use <code>flat-[color]</code> with <code>color</code>prop to create a flat button.</p>
+						<h5>Icon Only</h5>
+						<p>You can only use<code>.btn-icon</code> when you only want icon in your button.</p>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/adamya-ui/32a1da49f8ba6b9a16bdaf6945d7432f.js"></script>
+							<!-- ** Embed github code ends ** -->
+							<h5>Result:</h5>
+							<img class="rounded border mb-3" src="/assets/images/features/button-flat.jpg">
+							<img class="rounded border" src="/assets/images/features/button-icons.png">
+						</div>
+					</section>
+					<section class="docs-section" id="pagination">
+						<h2 class="section-heading">Pagination</h2>
+						<p> Pagination component is slightly modified to make it more beautiful. Let's have a glance.</p>
+						<h5>Separated</h5>
+						<p>To make space between separated icons of pagination use <code>.prev-item</code> class for the first pagination item and  <code>.next-item</code> for the last pagination item.</p>
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script src="https://gist.github.com/adamya-ui/a4c90d23e792e7cb983af63125ee016b.js"></script>
+							<!-- ** Embed github code ends ** -->
+							<h5>Result:</h5>
+							<img class="rounded border" src="/assets/images/features/pagination.png">
+						</div>
+					</section>
+					<section class="docs-section" id="search">
+						<h2 class="section-heading">Search</h2>
+						<p> There are two search box that are consistent throughout the platform.</p>
+						<h5>Top-Level Search</h5>
+						<ul>
+							<li>It will search the top-level user-flow as well as data (Data will vary according to user privileges)</li>
+							<li>It can show the recently searched term or frequently visited section in search suggestion
+							</li>
+							<li>It will mostly be used to jump between different section of the user flow with manually going through the whole navigational flow.</li>
+						</ul>
+						<h5>Table-level search</h5>
+						<ul>
+							<li>This search will be limited to just the table.</li>
+							<li>All the search result will be limited to the table in the page.</li>
+							<li>Seach process can be combined with other options</li>
+							<li>Search can be streamlined by selecting the search section</li>
+						</ul>
+						<h5>Actions Performed:</h5>
+						<li>Top-level navigation</li>
+						<li>Top-level searches</li>
+						<li>Table-level search</li>
+						<div class="docs-code-block"> <pre class="shadow-lg rounded"><code>CSS:background-color: #27272E
+Shadow colour one (light): #3E404D
+Shadow colour second (shadow): #000000</code></pre>
+														</div>
+					</section>
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">APIs</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Section Item 3.1</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Section Item 3.2</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Section Item 3.3</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">Intergrations</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Section Item 4.1</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Utilities</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Section Item 5.1</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Section Item 5.2</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-5-3">
+						<h2 class="section-heading">Section Item 5.3</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-6">
+					<header class="docs-header">
+						<h1 class="docs-heading">Web</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Section Item 6.1</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Section Item 6.2</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-6-3">
+						<h2 class="section-heading">Section Item 6.3</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-7">
+					<header class="docs-header">
+						<h1 class="docs-heading">Mobile</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Section Item 7.1</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Section Item 7.2</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-7-3">
+						<h2 class="section-heading">Section Item 7.3</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-8">
+					<header class="docs-header">
+						<h1 class="docs-heading">Resources</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Section Item 8.1</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-8-2">
+						<h2 class="section-heading">Section Item 8.2</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+					<section class="docs-section" id="item-8-3">
+						<h2 class="section-heading">Section Item 8.3</h2>
+						<p> Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-9">
+					<header class="docs-header">
+						<h1 class="docs-heading">FAQs</h1>
+						<section class="docs-intro">
+							<p> Section intro goes here. You can list all your FAQs using the format below. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-9-1">
+						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
+						<p> Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
+						<p> Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+						<p> Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+			
+					<section class="docs-section" id="item-9-2">
+						<h2 class="section-heading">Section Item 9.2 <small>(FAQ Category Two)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
+						<p> Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I bibendum sodales?</h5>
+						<p> Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where arcu sed urna gravida?</h5>
+						<p> Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+			
+					<section class="docs-section" id="item-9-3">
+						<h2 class="section-heading">Section Item 9.3 <small>(FAQ Category Three)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to dapibus sollicitudin justo vel fermentum?</h5>
+						<p> Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How long bibendum sodales?</h5>
+						<p> Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Where dapibus sollicitudin?</h5>
+						<p> Aenean et sodales nisi, vel efficitur sapien. Quisque molestie diam libero, et elementum diam mollis ac. In dignissim aliquam est eget ullamcorper. Sed id sodales tortor, eu finibus leo. Vivamus dapibus sollicitudin justo vel fermentum. Curabitur nec arcu sed urna gravida lobortis. Donec lectus est, imperdiet eu viverra viverra, ultricies nec urna. </p>
+					</section>
+			
+				</article>
+				<!--//docs-article-->
+				<footer class="footer">
+					<div class="container text-center py-5"><small class="copyright">Designed by <a class="theme-link" href="#">UI Team</a> for developers</small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"> <a href="#"><i class="fab fa-github fa-fw"></i></a> </li>
+							<li class="list-inline-item"> <a href="#"><i class="fab fa-twitter fa-fw"></i></a> </li>
+							<li class="list-inline-item"> <a href="#"><i class="fab fa-slack fa-fw"></i></a> </li>
+							<li class="list-inline-item"> <a href="#"><i class="fab fa-product-hunt fa-fw"></i></a> </li>
+							<li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a> </li>
+							<li class="list-inline-item"> <a href="#"><i class="fab fa-instagram fa-fw"></i></a> </li>
+						</ul>
+						<!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+</body>
+
+</html>
