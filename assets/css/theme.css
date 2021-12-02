@@ -10732,3 +10732,15 @@ a.text-link:hover {
     padding-top: 0.5rem;
   }
 }
+.img-column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.img-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
